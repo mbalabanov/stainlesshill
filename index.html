@@ -51,7 +51,10 @@
         </div>
         <div class="alert alert-success mt-3 p-3">
           <div class="row">
-            <div class="col-10">
+            <div class="col-2">
+              <img src="img/steel-news1.jpg" class="img-fluid rounded" alt="Steel News 1">
+            </div>
+            <div class="col-8">
               <h3>News Title 1</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates. Illo esse est non id ex
                 nisi
@@ -66,7 +69,10 @@
         </div>
         <div class="alert alert-primary border mt-3 p-3">
           <div class="row">
-            <div class="col-10">
+            <div class="col-2">
+              <img src="img/steel-news2.jpg" class="img-fluid rounded" alt="Steel News 2">
+            </div>
+            <div class="col-8">
               <h3>News Title 2</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur
                 autem?</p>
@@ -81,8 +87,11 @@
         </div>
         <div class="alert alert-warning mt-3 p-3">
           <div class="row">
-            <div class="col-10">
-              <h3>News Title 2</h3>
+            <div class="col-2">
+              <img src="img/steel-news3.jpg" class="img-fluid rounded" alt="Steel News 3">
+            </div>
+            <div class="col-8">
+              <h3>News Title 3</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus
                 quidem
                 ad.</p>
@@ -137,6 +146,7 @@
           Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores consequuntur
           non quaerat! Eveniet, repellat.</p>
 
+        <h3 class="text-secondary">Reliability Distribution</h3>
         <div class="mb-5">
           <canvas id="detail2Chart"></canvas>
         </div>
@@ -197,6 +207,14 @@
           label: 'Stainless Steel Price',
           data: [2, 3, 3.5, 4.5, 4, 5],
           borderWidth: 1
+        },{
+          label: 'Carbon Steel Price',
+          data: [1.5, 2.8, 3.2, 4, 4.2, 4.4],
+          borderWidth: 1
+        },{
+          label: 'Alloy Steel Price',
+          data: [0.8, 1.8, 2.2, 3, 3.2, 3.4],
+          borderWidth: 1
         }]
       },
       options: {
@@ -213,10 +231,18 @@
     new Chart(detailCtx, {
       type: 'line',
       data: {
-        labels: ['June', 'Juli', 'August', 'September', 'October', 'November'],
+        labels: ['October', 'November'],
         datasets: [{
           label: 'Stainless Steel Price',
-          data: [2, 3, 3.5, 4.5, 4, 5],
+          data: [4.5, 4, 5],
+          borderWidth: 1
+        },{
+          label: 'Carbon Steel Price',
+          data: [4.2, 4.4],
+          borderWidth: 1
+        },{
+          label: 'Alloy Steel Price',
+          data: [3.2, 3.4],
           borderWidth: 1
         }]
       },
@@ -233,17 +259,17 @@
 
     const pieData = {
       labels: [
-        'Stainless',
-        'Carbon',
-        'Alloy'
+        'More than 80% Reliable',
+        'More than 50% Reliable',
+        'Less than 50% Reliable'
       ],
       datasets: [{
         label: 'First Dataset',
         data: [300, 50, 100],
         backgroundColor: [
-          'rgb(255, 99, 132)',
           'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)'
+          'rgb(255, 205, 86)',
+          'rgb(255, 99, 132)',
         ],
         hoverOffset: 4
       }]

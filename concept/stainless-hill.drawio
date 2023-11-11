@@ -1,0 +1,284 @@
+<mxfile host="65bd71144e">
+    <diagram id="xDP37h39Xu2yx5Xs7RWK" name="Page-1">
+        <mxGraphModel dx="844" dy="709" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="81" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="19" y="880" width="1200" height="1190" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="148" width="890" height="642" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Stainless Hill" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="30" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="How global economic and political news impact price and sustainability in the steel industry." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="100" width="510" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Data Sources" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="40" y="160" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Market Price&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="330" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="News parsed for&lt;br&gt;political, economic, and catastrophic impact" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="440" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Patents parsed&lt;br&gt;for steel and&lt;br&gt;manufacturing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="550" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Custom GPTs&lt;br&gt;programmed by&lt;br&gt;Subject Matter Experts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="270" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Public Sources&lt;br&gt;of Information&lt;br&gt;Examples" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="270" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Historic Price&lt;br&gt;Developments" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="330" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Large Construction&lt;br&gt;Tenders in Planning" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="390" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Current&lt;br&gt;Patent Registration&lt;br&gt;in EU, US, Asia" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="450" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Current meteorological, geographical and seismological data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="510" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Reliability score for each data source calculated by our AI but also based on user feedback (other users of the data source but also our own internal assessments.)" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="191" width="490" height="49" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Forecasts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="270" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Price Development&lt;br&gt;Forecast" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="330" width="160" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Economic and&lt;br&gt;technological forecast" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="495" width="160" height="165" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Research Databases&lt;br&gt;in Universities&lt;br&gt;and Libraries" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="570" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Example Questions:&lt;br&gt;&lt;br&gt;How will the earthquake in Brazil impact the nickel production in the country's mines?&lt;br&gt;&lt;br&gt;How will the construction of the new administrative capital in Egypt impact the demand for steel?&lt;br&gt;&lt;br&gt;How will the embargo on Russia impact energy costs in Europe and increase the costs of steel production?&lt;br&gt;&lt;br&gt;..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="697" y="300" width="160" height="330" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;endWidth=27.01138811942136;endSize=8.291228070175437;width=87.01754385964912;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="211" y="480" as="sourcePoint"/>
+                        <mxPoint x="261" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;endWidth=27.01138811942136;endSize=8.291228070175437;width=87.01754385964912;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="441" y="480" as="sourcePoint"/>
+                        <mxPoint x="491" y="480" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="High Reliability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="678" width="120" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Medium Reliability&lt;br&gt;&lt;br&gt;Supported by&lt;br&gt;human feedback&lt;br&gt;from subject matter&lt;br&gt;experts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="678" width="150" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Speculative Reliability&lt;br&gt;&lt;br&gt;For forecast modelling of&lt;br&gt;different scenarios." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="678" width="140" height="82" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="Team &quot;Secret of Steel&quot;: Thao Nguyen, Marin Balabanov, Oussama Batouche" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="65" width="430" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="630" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="34" target="42">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="339" y="1095"/>
+                            <mxPoint x="339" y="1275"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="Market Price&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="99" y="1040" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" style="edgeStyle=none;html=1;entryX=0.047;entryY=0.396;entryDx=0;entryDy=0;fontSize=14;entryPerimeter=0;" edge="1" parent="1" source="35" target="42">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="299" y="1205"/>
+                            <mxPoint x="299" y="1294"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="News parsed for&lt;br&gt;political, economic, and catastrophic impact" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="99" y="1150" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=none;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;fontSize=14;" edge="1" parent="1" source="36" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Patents parsed&lt;br&gt;for steel and&lt;br&gt;manufacturing" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="99" y="1260" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Custom GPTs&lt;br&gt;programmed by&lt;br&gt;Subject Matter Experts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="39" y="980" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Data&lt;br&gt;R1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="126" y="1425" width="94" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Custom&lt;br&gt;GPT&lt;br&gt;Model&lt;br&gt;I" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="39" y="1040" width="60" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Custom&lt;br&gt;GPT&lt;br&gt;Model&lt;br&gt;II" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="39" y="1150" width="60" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Custom&lt;br&gt;GPT&lt;br&gt;Model&lt;br&gt;II" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="39" y="1260" width="60" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;startArrow=classic;startFill=1;" edge="1" parent="1" source="42" target="55">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Orchestration&lt;br&gt;Engine" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="369" y="1270" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Data&lt;br&gt;R2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="436" y="1390" width="91" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="299" y="1600" width="741" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Application" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="304" y="1570" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="High-Level Dashboard" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="309" y="1610" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="309" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="429" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="549" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="319" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="439" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="559" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="309" y="1640" width="711" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Continuous Validation&lt;br&gt;Engine" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="929" y="1270" width="230" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="- Top 3 Sources&lt;br&gt;&lt;br&gt;- Min. Score&lt;br&gt;&lt;br&gt;- Feedback&lt;br&gt;&lt;br&gt;..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="379" y="1040" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;startArrow=classic;startFill=1;" edge="1" parent="1" source="57" target="59">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="GSC: GPT for Scoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="379" y="980" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="- Best reviewed in a topic&lt;br&gt;&lt;br&gt;- Most used in a topic&lt;br&gt;&lt;br&gt;- Most current in a topic&lt;br&gt;&lt;br&gt;..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="699" y="1040" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="GSL: GPT for Selection&lt;br&gt;Selects possible alternate GPTs" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" vertex="1" parent="1">
+                    <mxGeometry x="699" y="980" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="38">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="173.57" y="1370" as="sourcePoint"/>
+                        <mxPoint x="173.57" y="1420" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="65" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.052;entryY=0.986;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="38" target="42">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="263.56999999999994" y="1425" as="sourcePoint"/>
+                        <mxPoint x="263.56999999999994" y="1475" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="299" y="1465"/>
+                            <mxPoint x="379" y="1465"/>
+                            <mxPoint x="381" y="1380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="66" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="478.12999999999994" y="1330" as="sourcePoint"/>
+                        <mxPoint x="478.56" y="1385" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="67" value="" style="shape=flexArrow;endArrow=classic;html=1;fontSize=14;entryX=0.384;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="81">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="478.12999999999977" y="1470" as="sourcePoint"/>
+                        <mxPoint x="478" y="1550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="" style="endArrow=classic;startArrow=classic;html=1;fontSize=14;entryX=0.219;entryY=0.999;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="42" target="56">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="449" y="1260" as="sourcePoint"/>
+                        <mxPoint x="499" y="1210" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="" style="curved=1;endArrow=classic;html=1;fontSize=14;entryX=1;entryY=0.75;entryDx=0;entryDy=0;startArrow=classic;startFill=1;exitX=0.382;exitY=-0.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="45" target="42">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="589" y="1460" as="sourcePoint"/>
+                        <mxPoint x="639" y="1410" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="710" y="1490"/>
+                            <mxPoint x="740" y="1390"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="Feedback" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="718" y="1420" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="72" value="...&lt;br&gt;&lt;br&gt;...&lt;br&gt;&lt;br&gt;..." style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="979" y="1040" width="220" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="78" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="73" target="59">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="OpenAI GPT Store" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" vertex="1" parent="1">
+                    <mxGeometry x="979" y="980" width="220" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="Validation Testing" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="688" y="1268" width="172" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="The Stainless Hill System" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="49" y="900" width="181" height="31" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Compares found and delivered results with alternate data sources.&lt;br&gt;Can lead to flagging potential improvements." style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="929" y="1347" width="230" height="78" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="The system will make use of the new custom GPTs just recently introduced by OpenAI. These are GPTs focused on specific topics programmed by subject matter experts." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="810" width="586" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="680" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="85" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="790" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="800" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="87" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="910" y="1820" width="110" height="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="Detailed&lt;br&gt;Drilldown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="920" y="1830" width="80" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -20,16 +20,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+            <a class="nav-link active" aria-current="page" href="#dashboard">Dashboard</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">News</a>
+            <a class="nav-link" href="#news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Patents</a>
+            <a class="nav-link" href="#patents">Patents</a>
           </li>
         </ul>
       </div>
@@ -39,157 +39,340 @@
   <main class="container">
     <div class="row mt-5">
       <div class="col-12">
-        <h2 class="text-secondary">Stainless Hill: Data in Steel</h2>
+        <div class="bg-primary rounded p-2 text-center">
+          <h2 class="text-light"><img src="img/spiral.png" style="height: 3rem; padding-right: 1rem">Stainless Hill:
+            Data in Steel</h2>
+        </div>
       </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-4" id="dashboard">
       <div class="col-12 border p-4 rounded bg-light">
         <h2 class="text-primary">Latest Developments</h2>
+
         <div>
           <canvas id="mainChart"></canvas>
         </div>
+
         <div class="alert alert-success mt-3 p-3">
           <div class="row">
             <div class="col-2">
               <img src="img/steel-news1.jpg" class="img-fluid rounded" alt="Steel News 1">
             </div>
             <div class="col-8">
-              <h3>News Title 1</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates. Illo esse est non id ex
-                nisi
-                ratione, laboriosam vitae molestias consequatur numquam quam nemo impedit repudiandae, eos mollitia
-                saepe?</p>
+              <span class="badge bg-secondary">November 10, 2023</span>
+              <h3>EUR 4 billion seed for sustainable steel planted in Finland</h3>
+              <p>On November 10, 2023, significant developments in the Finnish steel industry were reported, focusing
+                mainly on sustainability and innovation. The Norwegian company Blastr Green Steel announced plans to
+                establish a €4 billion green steel plant with an integrated hydrogen production facility in Inkoo,
+                Finland​​​​ (<a
+                  href="https://www.goodnewsfinland.com/en/articles/breaking-news/2023/eur-4-billion-seed-planted-for-sustainable-steel-in-finland/"
+                  target="_blank">source</a>). This project, one of the largest industrial investments in Finland, is
+                expected to create up to 1,200 jobs once operational (<a
+                  href="https://www.businessfinland.fi/en/whats-new/news/cision-releases/2023/four-billion-euro-investment-planned-into-a-green-steel-plant-in-inkoo-finland"
+                  target="_blank">source</a>). The plant aims to produce two and a half million tons of hot and
+                cold-rolled green steel annually, a form of steel manufactured without fossil fuels (<a
+                  href="https://www.goodnewsfinland.com/en/articles/breaking-news/2023/eur-4-billion-seed-planted-for-sustainable-steel-in-finland/"
+                  target="_blank">source</a>).</p>
             </div>
             <div class="col-2 text-center">
-              <p><strong>Reliability:</strong></p>
-              <h4><span class="badge bg-success">80%</span></h4>
+              <p><strong>Reliability <a data-bs-toggle="tooltip"
+                    data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+              </p>
+              <h4><span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
             </div>
           </div>
         </div>
-        <div class="alert alert-primary border mt-3 p-3">
-          <div class="row">
-            <div class="col-2">
-              <img src="img/steel-news2.jpg" class="img-fluid rounded" alt="Steel News 2">
-            </div>
-            <div class="col-8">
-              <h3>News Title 2</h3>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur
-                autem?</p>
-              <p>Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores
-                consequuntur.</p>
-            </div>
-            <div class="col-2 text-center">
-              <p><strong>Reliability:</strong></p>
-              <h4><span class="badge bg-primary">50%</span></h4>
-            </div>
-          </div>
-        </div>
+
         <div class="alert alert-warning mt-3 p-3">
           <div class="row">
             <div class="col-2">
               <img src="img/steel-news3.jpg" class="img-fluid rounded" alt="Steel News 3">
             </div>
             <div class="col-8">
-              <h3>News Title 3</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus
-                quidem
-                ad.</p>
+              <span class="badge bg-secondary">November 10, 2023</span>
+              <h3>Peab joins SSAB to launch first building with fossil-free steel</h3>
+              <p>Peab, a Nordic community builder, has collaborated with SSAB, Ruukki Construction, and Wihlborgs to
+                launch the world's first building with fossil-free steel in Lund, Sweden, near Finland. Parts of this
+                building were manufactured using fossil-free steel produced by Ruukki Construction in Finland, marking a
+                significant step towards sustainable construction practices (<a
+                  href="http://www.tradearabia.com/news/IND_415573.html" target="_blank">source</a>).</p>
             </div>
             <div class="col-2 text-center">
-              <p><strong>Reliability:</strong></p>
-              <h4><span class="badge bg-danger">40%</span></h4>
+              <p><strong>Reliability <a data-bs-toggle="tooltip"
+                    data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+              </p>
+              <h4><span class="badge bg-danger" data-bs-toggle="modal" data-bs-target="#scoringModal">7</span></h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="alert alert-primary border mt-3 p-3">
+          <div class="row">
+            <div class="col-2">
+              <img src="img/steel-news2.jpg" class="img-fluid rounded" alt="Steel News 2">
+            </div>
+            <div class="col-8">
+              <span class="badge bg-secondary">November 7, 2023</span>
+              <h3>Outokumpu Financial Performance</h3>
+              <p>The company's adjusted earnings before interest, taxes, depreciation, and amortization (EBITDA) fell
+                83% to 51 million euros in the July-September period, which was below the forecast. However, CEO Heikki
+                Malinen indicated that the negative trend seemed to have bottomed out, with some positive signals,
+                although a market recovery would take time (<a
+                  href="https://www.reuters.com/markets/commodities/steelmaker-outokumpu-plans-job-cuts-germany-q3-earnings-slump-2023-11-07/#:~:text=Outokumpu%27s%20adjusted%20earnings%20before%20interest%2C,provided%20poll%20of%20analysts"
+                  target="_blank">source</a>).</p>
+            </div>
+            <div class="col-2 text-center">
+              <p><strong>Reliability <a data-bs-toggle="tooltip"
+                    data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+              </p>
+              <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row mt-5">
-      <div class="col-md-4 border-start border-end p-4">
-        <h3 class="text-secondary">News Details</h3>
-        <div class="alert alert-success mt-3 p-3">
-          <h3>News Title 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates. Illo esse est non id ex nisi
-            ratione, laboriosam vitae molestias consequatur numquam quam nemo impedit repudiandae, eos mollitia saepe?
-          </p>
-          <p><strong>Reliability:</strong></p>
-          <h4><span class="badge bg-success">80%</span></h4>
-        </div>
-
+    <div class="row mt-5 border-top">
+      <div class="col-md-4 border-start p-4" id="news">
+        <h4 class="text-secondary">News Timeline</h4>
+        <img src="img/news-header.jpg" class="img-fluid rounded" alt="News">
         <div class="alert alert-primary border mt-3 p-3">
-          <h4>News Title 2</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur
-            autem?</p>
-          <p>Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores
-            consequuntur.</p>
-          <p><strong>Reliability:</strong></p>
-          <h4><span class="badge bg-primary">50%</span></h4>
+          <span class="badge bg-secondary">Before November, 2023</span>
+          <h3>Global Steel Demand Increase</h3>
+          <p>The World Steel Association's April 2023 Short Range Outlook Report indicates a projected growth in global
+            steel demand by 2.3% year-over-year, reaching 1,822.3 million tonnes (Mt). This is a significant increase
+            from the 1,781.5 Mt in 2022 and marks an upgrade from the October 2022 forecast, which predicted a 1.0%
+            growth for 2023​​ (<a
+              href="https://www.leecosteel.com/news/post/q3-q4-2023-steel-market-outlooks/#:~:text=According%20to%20the%20World%20Steel,in%202023"
+              target="_blank">source</a>).</p>
+          <p><strong>Reliability <a data-bs-toggle="tooltip"
+                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
         </div>
-
-        <div class="alert alert-warning mt-3 p-3">
-          <h4>News Title 2</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus quidem
-            ad.</p>
-          <p><strong>Reliability:</strong></p>
-          <h4><span class="badge bg-danger">40%</span></h4>
+        <div class="alert alert-primary border mt-3 p-3">
+          <span class="badge bg-secondary">Before November, 2023</span>
+          <h3>Pressure on Noble Alloys Prices</h3>
+          <p>There has been a decline in demand from the steel market for noble alloys, resulting in continued pressure
+            on their prices. The price forecast for 2023 has been adjusted downwards, reflecting this trend of declining
+            prices​​ (<a
+              href="https://www.woodmac.com/reports/metals-global-noble-steel-alloys-short-term-outlook-october-2023-150174564/#:~:text=Against%20this%20backdrop%2C%20noble%20alloys,forecast%20and%20the%20latest"
+              target="_blank">source</a>).</p>
+          <p><strong>Reliability <a data-bs-toggle="tooltip"
+                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
         </div>
-
-      </div>
-      <div class="col-md-4 border-start border-end p-4">
-        <h4 class="text-secondary">Pricing Details</h4>
-
-        <div class="mb-5">
-          <canvas id="detailChart"></canvas>
+        <div class="alert alert-primary border mt-3 p-3">
+          <span class="badge bg-secondary">Before November, 2023</span>
+          <h3>Steel Prices Fluctuations</h3>
+          <p>There is an expectation of a further $200-$250 per ton increase for steel coils. However, there is
+            uncertainty about whether this rapid price collapse will continue and reach a bottom by the end of 2022, or
+            if the decline will extend into 2023​​ (<a
+              href="https://www.fedsteel.com/industry-trends/steel-industry-trends-for-2023/#:~:text=Experts%20from%20The%20World%20Steel,81%20billion%20mt">source</a>).
+          </p>
+          <p><strong>Reliability <a data-bs-toggle="tooltip"
+                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
         </div>
-
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur autem?
-          Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores consequuntur
-          non quaerat! Eveniet, repellat.</p>
+        <div class="alert alert-primary border mt-3 p-3">
+          <span class="badge bg-secondary">Before November, 2023</span>
+          <h3>Recovery in Steel Demand</h3>
+          <p>Experts from The World Steel Association predict a modest recovery in steel demand, with an anticipated
+            increase of 1% in 2023, leading to a total value of 1.81 billion mt​​ (<a
+              href="https://www.fedsteel.com/industry-trends/steel-industry-trends-for-2023/#:~:text=Experts%20from%20The%20World%20Steel,81%20billion%20mt"
+              target="_blank">source</a>).</p>
+          <p><strong>Reliability <a data-bs-toggle="tooltip"
+                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
+        </div>
+        <div class="alert alert-primary border mt-3 p-3">
+          <span class="badge bg-secondary">Before November, 2023</span>
+          <h3>Growth in Alloy Steel Market</h3>
+          <p>The alloy steel market is forecasted to grow significantly from $14,906.1 million in 2018 to an unspecified
+            amount by 2028. This growth is projected at a compound annual growth rate (CAGR) of 6.3% during the forecast
+            period from 2021 to 2028, encompassing both flat products and long/tubular products​​ (<a
+              href="https://dataintelo.com/report/global-alloy-steel-market/#:~:text=The%20alloy%20steel%20market%20is,Alloy%20Steel%20Market%20by%20Type"
+              target="_blank">source</a>).</p>
+          <p><strong>Reliability <a data-bs-toggle="tooltip"
+                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span></h4>
+        </div>
 
         <h3 class="text-secondary">Reliability Distribution</h3>
         <div class="mb-5">
-          <canvas id="detail2Chart"></canvas>
+          <canvas id="reliabilityDistribution"></canvas>
         </div>
 
       </div>
-      <div class="col-md-4 border-start border-end p-4">
-        <h3 class="text-secondary">Patents Details</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus quidem ad.
-          Minima porro officiis aspernatur id expedita praesentium quis incidunt repudiandae quod perferendis!
-          Provident.</p>
+      <div class="col-md-4 border-start p-4" id="pricing">
+        <h4 class="text-secondary">Pricing Details</h4>
+        <img src="img/pricing-header.jpg" class="img-fluid rounded" alt="Pricing">
+        <div class="mt-4">
+          <canvas id="detailsChart1"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart2"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart3"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart4"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart5"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart6"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart7"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart8"></canvas>
+        </div>
+        <div class="mt-4">
+          <canvas id="detailsChart9"></canvas>
+        </div>
 
+
+      </div>
+      <div class="col-md-4 border-start border-end p-4" id="patents">
+        <h4 class="text-secondary">Recent Patents</h4>
+        <img src="img/patent-header.jpg" class="img-fluid rounded" alt="Patents">
         <div class="alert alert-secondary mt-3 p-3">
-          <h3>Patent 1</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates. Illo esse est non id ex nisi
-            ratione, laboriosam vitae molestias consequatur numquam quam nemo impedit repudiandae, eos mollitia saepe?
+          <h3>Bainitic GENS Steel Processing</h3>
+          <p>A method for processing advanced high-strength steel involves heating a bainitic GENS steel material, which
+            includes ferrite and bainite, above the Ac3 temperature to convert a portion of these elements to austenite.
+            This process includes forming while cooling the heated steel blank into a component in a
+            temperature-controlled steel die, leading to the formation of retained austenite, martensite, and bainite.
+            This method is particularly advantageous in manufacturing energy-absorbing components for vehicles (<a
+              href="https://patents.justia.com/patent/20230183828" target="_blank">source</a>).</p>
+          <p><strong>Relevance <a data-bs-toggle="tooltip"
+                data-bs-title="The relevance of a patent is calculated by the AI. Some patents are very relevant to the steel industry.">&#x24D8;</a></strong>
           </p>
-          <p><strong>Relevance:</strong></p>
-          <h4><span class="badge bg-secondary">80%</span></h4>
+          <h4><span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
         </div>
-
-        <div class="alert alert-secondary border mt-3 p-3">
-          <h4>Patent 2</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur
-            autem?</p>
-          <p>Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores
-            consequuntur.</p>
-          <p><strong>Relevance:</strong></p>
-          <h4><span class="badge bg-secondary">50%</span></h4>
-        </div>
-
         <div class="alert alert-secondary mt-3 p-3">
-          <h4>Patent 3</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus quidem
-            ad.</p>
-          <p><strong>Relevance:</strong></p>
-          <h4><span class="badge bg-secondary">40%</span></h4>
+          <h3>Advanced Heat Treatment Methods</h3>
+          <p>Heat treatment has seen significant advancements, with traditional methods like annealing and quenching
+            being enhanced by technologies like induction hardening, nitriding, and carburizing. These advancements
+            enable manufacturers to tailor the hardness, strength, and wear resistance of steel to specific
+            requirements, which is beneficial for industries like automotive, aerospace, and construction (<a
+              href="https://blog.mwpbnp.com/advanced-steel-processing-techniques/" target="_blank">source</a>).</p>
+          <p><strong>Relevance <a data-bs-toggle="tooltip"
+                data-bs-title="The relevance of a patent is calculated by the AI. Some patents are very relevant to the steel industry.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
+        </div>
+        <div class="alert alert-secondary mt-3 p-3">
+          <h3>Precision Machining</h3>
+          <p>Computer numerical control (CNC) machining has revolutionized the steel industry by offering unparalleled
+            accuracy and efficiency. CNC machines use computer-controlled systems to precisely shape and cut steel,
+            reducing human errors and production time. This precision improves the quality of steel components and
+            allows manufacturers to optimize material usage and minimize waste (<a
+              href="https://blog.mwpbnp.com/advanced-steel-processing-techniques/" target="_blank">source</a>).</p>
+          <p><strong>Relevance <a data-bs-toggle="tooltip"
+                data-bs-title="The relevance of a patent is calculated by the AI. Some patents are very relevant to the steel industry.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
+        </div>
+        <div class="alert alert-secondary mt-3 p-3">
+          <h3>Advanced Forming Techniques</h3>
+          <p>Techniques like hydroforming, roll forming, and incremental sheet forming have become popular due to their
+            ability to shape steel into complex geometries without compromising structural integrity. These methods
+            offer increased flexibility, reduced tooling costs, and improved product quality, making them ideal for
+            industries requiring intricate and customized steel components (<a
+              href="https://blog.mwpbnp.com/advanced-steel-processing-techniques/" target="_blank">source</a>).</p>
+          <p><strong>Relevance <a data-bs-toggle="tooltip"
+                data-bs-title="The relevance of a patent is calculated by the AI. Some patents are very relevant to the steel industry.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
+        </div>
+        <div class="alert alert-secondary mt-3 p-3">
+          <h3>Surface Treatment Innovations</h3>
+          <p>To combat corrosion and enhance the durability of steel, advanced surface treatment techniques like
+            electroplating, powder coating, and thermal spraying have been developed. These methods provide a protective
+            coating and improve the aesthetics, wear and tear resistance, and chemical resistance of steel products,
+            allowing them to withstand harsh environments for extended periods (<a
+              href="https://blog.mwpbnp.com/advanced-steel-processing-techniques/" target="_blank">source</a>).</p>
+          <p><strong>Relevance <a data-bs-toggle="tooltip"
+                data-bs-title="The relevance of a patent is calculated by the AI. Some patents are very relevant to the steel industry.">&#x24D8;</a></strong>
+          </p>
+          <h4><span class="badge bg-secondary" data-bs-toggle="modal" data-bs-target="#scoringModal">10</span></h4>
         </div>
       </div>
     </div>
   </main>
 
+  <div class="modal fade" id="scoringModal" tabindex="-1" aria-labelledby="scorignModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="scoringModalLabel">Scoring Information</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-primary">
+          <p>GPT Version: <strong>4.5-Turbo</strong><br />
+            GP + SC Version: <strong>1.0.0</strong> (released on November 7, 2023)</p>
+            </div>
+          <table class="table table-sm table-secondary">
+            <thead>
+              <td><span class="badge bg-primary">Used Custom GPTs</span></td>
+              <th>Model 1</th>
+              <th>Model 2</th>
+              <th>Model 3</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Weight:</td>
+              <td>5</td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <td>Score:</td>
+              <td>3</td>
+              <td>5</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>Weighted Score:</td>
+              <td>15</td>
+              <td>15</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>Strategy:</td>
+              <td colspan="3"><span class="badge bg-danger">Tortor</span> <span class="badge bg-danger">Magna Porta</span></td>
+            </tr>
+            <tr>
+              <td>Adjusted Score:</td>
+              <td>14</td>
+              <td>13</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Finalized Score:</td>
+              <td colspan="3" class="text-center"><span class="badge bg-dark">X</span></td>
+            </tr>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <footer class="mt-5 border-top">
     <div class="container-fluid bg-body-tertiary text-center p-3">
+      <p><img src="img/outokumpu-logo.png" height="40px" alt="Outokumpu"></p>
       <p class="text-secondary">Stainless Hill: Data in Steel</p>
     </div>
   </footer>
@@ -202,66 +385,314 @@
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ['June', 'Juli', 'August', 'September', 'October', 'November'],
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
         datasets: [{
-          label: 'Stainless Steel Price',
-          data: [2, 3, 3.5, 4.5, 4, 5],
-          borderWidth: 1
-        },{
-          label: 'Carbon Steel Price',
-          data: [1.5, 2.8, 3.2, 4, 4.2, 4.4],
-          borderWidth: 1
-        },{
-          label: 'Alloy Steel Price',
-          data: [0.8, 1.8, 2.2, 3, 3.2, 3.4],
-          borderWidth: 1
-        }]
+          label: 'Hot Rolled Coil 304',
+          data: [211.9, 206.7, 206.9, 201.2, 211.1, 220.7, 227.1, 214.1, 203.9, 198.9, 190.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Hot Rolled Coil 316',
+          data: [204.6, 197.6, 199.7, 198.9, 210.1, 228.7, 246.2, 238.0, 222.8, 209.1, 200.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Hot Rolled Plate 304',
+          data: [186.8, 190.2, 188.0, 179.0, 188.0, 195.5, 197.3, 187.3, 179.5, 176.1, 168.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Hot Rolled Plate 316',
+          data: [198.2, 199.5, 198.7, 191.0, 201.1, 217.1, 231.3, 221.8, 208.1, 196.2, 188.4],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Cold Rolled Coil 304',
+          data: [197.8, 191.9, 192.0, 186.8, 195.5, 203.9, 209.0, 200.1, 189.9, 185.1, 176.9],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Cold Rolled Coil 316',
+          data: [201.5, 193.7, 195.6, 195.2, 205.6, 223.2, 239.3, 233.1, 218.0, 204.9, 196.1],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Cold Rolled Coil 430',
+          data: [157.2, 154.0, 153.7, 143.0, 143.7, 146.6, 150.5, 147.0, 145.5, 144.3, 138.4],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Bright Drawn Bar 304',
+          data: [209.6, 200.8, 200.3, 189.6, 199.3, 206.6, 214.3, 205.2, 195.0, 193.6, 189.7],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }, {
+          label: 'Bright Drawn Bar 316',
+          data: [216.8, 208.4, 208.9, 204.2, 215.0, 226.1, 240.2, 238.4, 225.1, 213.4, 209.0],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
       },
       options: {
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: false
           }
         }
       }
     });
 
-    const detailCtx = document.getElementById('detailChart');
+    const ctx1 = document.getElementById('detailsChart1');
 
-    new Chart(detailCtx, {
+    new Chart(ctx1, {
       type: 'line',
       data: {
-        labels: ['October', 'November'],
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
         datasets: [{
-          label: 'Stainless Steel Price',
-          data: [4.5, 4, 5],
-          borderWidth: 1
-        },{
-          label: 'Carbon Steel Price',
-          data: [4.2, 4.4],
-          borderWidth: 1
-        },{
-          label: 'Alloy Steel Price',
-          data: [3.2, 3.4],
-          borderWidth: 1
-        }]
+          label: 'Hot Rolled Coil 304',
+          data: [211.9, 206.7, 206.9, 201.2, 211.1, 220.7, 227.1, 214.1, 203.9, 198.9, 190.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
       },
       options: {
         scales: {
           y: {
-            beginAtZero: true
+            beginAtZero: false
           }
         }
       }
     });
 
-    const detail2Ctx = document.getElementById('detail2Chart');
+    const ctx2 = document.getElementById('detailsChart2');
+
+    new Chart(ctx2, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Hot Rolled Coil 316',
+          data: [204.6, 197.6, 199.7, 198.9, 210.1, 228.7, 246.2, 238.0, 222.8, 209.1, 200.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx3 = document.getElementById('detailsChart3');
+
+    new Chart(ctx3, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Hot Rolled Plate 304',
+          data: [186.8, 190.2, 188.0, 179.0, 188.0, 195.5, 197.3, 187.3, 179.5, 176.1, 168.3],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx4 = document.getElementById('detailsChart4');
+
+    new Chart(ctx4, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Hot Rolled Plate 316',
+          data: [198.2, 199.5, 198.7, 191.0, 201.1, 217.1, 231.3, 221.8, 208.1, 196.2, 188.4],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx5 = document.getElementById('detailsChart5');
+
+    new Chart(ctx5, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Cold Rolled Coil 304',
+          data: [197.8, 191.9, 192.0, 186.8, 195.5, 203.9, 209.0, 200.1, 189.9, 185.1, 176.9],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx6 = document.getElementById('detailsChart6');
+
+    new Chart(ctx6, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Cold Rolled Coil 316',
+          data: [201.5, 193.7, 195.6, 195.2, 205.6, 223.2, 239.3, 233.1, 218.0, 204.9, 196.1],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx7 = document.getElementById('detailsChart7');
+
+    new Chart(ctx7, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Cold Rolled Coil 430',
+          data: [157.2, 154.0, 153.7, 143.0, 143.7, 146.6, 150.5, 147.0, 145.5, 144.3, 138.4],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        },
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx8 = document.getElementById('detailsChart8');
+
+    new Chart(ctx8, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Bright Drawn Bar 304',
+          data: [209.6, 200.8, 200.3, 189.6, 199.3, 206.6, 214.3, 205.2, 195.0, 193.6, 189.7],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const ctx9 = document.getElementById('detailsChart9');
+
+    new Chart(ctx9, {
+      type: 'line',
+      data: {
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        datasets: [{
+          label: 'Bright Drawn Bar 316',
+          data: [216.8, 208.4, 208.9, 204.2, 215.0, 226.1, 240.2, 238.4, 225.1, 213.4, 209.0],
+          borderWidth: 1,
+          pointStyle: 'circle',
+          pointRadius: 6,
+          pointHoverRadius: 8
+        }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: false
+          }
+        }
+      }
+    });
+
+    const distributionCTX = document.getElementById('reliabilityDistribution');
 
     const pieData = {
       labels: [
-        'More than 80% Reliable',
-        'More than 50% Reliable',
-        'Less than 50% Reliable'
+        'More than 8 Reliable',
+        'More than 5 Reliable',
+        'Less than 5 Reliable'
       ],
       datasets: [{
         label: 'First Dataset',
@@ -275,7 +706,7 @@
       }]
     };
 
-    new Chart(detail2Ctx, {
+    new Chart(distributionCTX, {
       type: 'doughnut',
       data: pieData,
       options: {
@@ -287,6 +718,11 @@
       }
     });
 
+  </script>
+
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
   </script>
 
 </body>

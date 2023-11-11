@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administration Environment</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom px-5">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/outokumpu-logo.png" height="40px" alt="Outokumpu"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#dashboard">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#news">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing Forecasts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#patents">Patents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin.html">Administration</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+    <h2 class="text-secondary mt-5">Data Collection and Reliability Score</h2>
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <div class=" border p-4 rounded bg-light">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <h3>Step 1</h3>
+            </div>
+            <div class="col-6 text-end">
+              <a href="#" class="btn btn-primary" onclick="showNextOne()">Next</a>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <tr>
+              <th>Title</th>
+              <th>Source</th>
+              <th>Date</th>
+            </tr>
+
+            <tr>
+              <td>Steel Industry Shows Resilience Amid Global Challenges</td>
+              <td>Industry Insider</td>
+              <td>2023-11-10</td>
+            </tr>
+            <tr>
+              <td>Innovations in Stainless Steel Production Lead to Cost Reductions</td>
+              <td>MetalTech Weekly</td>
+              <td>2023-11-11</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-4" id="nextOne" style="display: none">
+        <div class=" border p-4 rounded bg-light">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <h3>Step 2</h3>
+            </div>
+            <div class="col-6 text-end">
+              <a href="#" class="btn btn-primary" onclick="showNextTwo()">Next</a>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <tr>
+              <th colspan="5">GPT Name</th>
+            </tr>
+            <tr>
+              <td>GPT</td>
+              <td><input type="checkbox" class="form-check-input" id="gpt" checked></td>
+            </tr>
+            <tr>
+              <td>AGPT</td>
+              <td><input type="checkbox" class="form-check-input" id="agpt" checked></td>
+            </tr>
+            <tr>
+              <td>BGPT</td>
+              <td><input type="checkbox" class="form-check-input" id="bgpt" checked></td>
+            </tr>
+            <tr>
+              <td>CGPT</td>
+              <td><input type="checkbox" class="form-check-input" id="cgpt"></td>
+            </tr>
+            <tr>
+              <td>DGPT</td>
+              <td><input type="checkbox" class="form-check-input" id="dgpt"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-4" id="nextTwo" style="display: none">
+        <div class="border p-4 rounded bg-light">
+          <div class="row">
+            <div class="col-6 mb-3">
+              <h3>Step 3</h3>
+            </div>
+            <div class="col-6 text-end">
+              <a href=" #" class="btn btn-success">Save</a>
+            </div>
+          </div>
+          <table class="table table-striped">
+            <tr>
+              <th>Title</th>
+              <th>Source</th>
+              <th>Date</th>
+              <th class="text-center">Reliability Score</th>
+            </tr>
+
+            <tr>
+              <td>Steel Industry Shows Resilience Amid Global Challenges</td>
+              <td>Industry Insider</td>
+              <td>2023-11-10</td>
+              <td class="text-center">5</td>
+            </tr>
+            <tr>
+              <td>Innovations in Stainless Steel Production Lead to Cost Reductions</td>
+              <td>MetalTech Weekly</td>
+              <td>2023-11-11</td>
+              <td class="text-center">7</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-5 border-top">
+    <div class="container-fluid bg-body-tertiary text-center p-3">
+      <p><img src="img/outokumpu-logo.png" height="40px" alt="Outokumpu"></p>
+      <p class="text-secondary"><strong>Stainless Hill:</strong> Data on Steel and Sustainability</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function showNextOne() {
+      let nextOne = document.getElementById("nextOne");
+      nextOne.style.display = "block";
+    }
+
+    function showNextTwo() {
+      let nextOne = document.getElementById("nextTwo");
+      nextOne.style.display = "block";
+    }
+  </script>
+</body>
+
+</html>

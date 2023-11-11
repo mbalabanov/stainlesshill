@@ -45,9 +45,11 @@
 
     <div class="row mt-4">
       <div class="col-12 border p-4 rounded bg-light">
-        <h2 class="text-warning">Latest Developments</h2>
-        <img src="img/mock-chart.png" class="img-fluid" alt="Mock Chart">
-        <div class="alert alert-success m-2 p-2">
+        <h2 class="text-primary">Latest Developments</h2>
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="alert alert-success mt-3 p-3">
           <div class="row">
             <div class="col-10">
               <h3>News Title 1</h3>
@@ -60,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="alert alert-primary border m-2 p-2">
+        <div class="alert alert-primary border mt-3 p-3">
           <div class="row">
             <div class="col-10">
               <h3>News Title 2</h3>
@@ -75,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="alert alert-warning m-2 p-2">
+        <div class="alert alert-warning mt-3 p-3">
           <div class="row">
             <div class="col-10">
               <h3>News Title 2</h3>
@@ -92,18 +94,18 @@
     </div>
     <div class="row mt-5">
       <div class="col-md-4 border-start border-end p-4">
-        <h3>News Details</h3>
+        <h3 class="text-secondary">News Details</h3>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, voluptates. Illo esse est non id ex nisi
         ratione, laboriosam vitae molestias consequatur numquam quam nemo impedit repudiandae, eos mollitia saepe?
       </div>
       <div class="col-md-4 border-start border-end p-4">
-        <h3>Pricing Details</h3>
+        <h3 class="text-secondary">Pricing Details</h3>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis quia facere mollitia aspernatur autem?
         Reprehenderit, saepe velit exercitationem eligendi provident beatae quae quas debitis asperiores consequuntur
         non quaerat! Eveniet, repellat.
       </div>
       <div class="col-md-4 border-start border-end p-4">
-        <h3>Patents Details</h3>
+        <h3 class="text-secondary">Patents Details</h3>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sint facilis, quia ut impedit natus quidem ad.
         Minima porro officiis aspernatur id expedita praesentium quis incidunt repudiandae quod perferendis! Provident.
       </div>
@@ -116,6 +118,32 @@
     </div>
   </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['June', 'Juli', 'August', 'September', 'October', 'November'],
+        datasets: [{
+          label: 'Stainless Steel Price',
+          data: [4, 6, 7, 7.5, 8, 9],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+    
+  </script>
+
 </body>
 
 </html>

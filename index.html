@@ -26,7 +26,7 @@
             <a class="nav-link" href="#news">News</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#pricing">Pricing</a>
+            <a class="nav-link" href="#pricing">Pricing Forecasts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#patents">Patents</a>
@@ -165,21 +165,7 @@
                 data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
             <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span>
           </p>
-
-          <hr />
-          <h4>Enhanced Energy Efficiency in Existing Processes</h4>
-          <p>Implementing energy-efficient technologies in furnace design, waste heat recovery, and process optimization
-            to reduce energy consumption and emissions (<a
-              href="https://www.steel-technology.com/articles/top-5-sustainability-trends-in-crude-steel-production-for-the-year-2023#:~:text=Furthermore%2C%20technologies%20focused%20on%20improving,enhancing%20its%20overall%20economic%20competitiveness"
-              target="_blank">source</a>).</p>
-          <p class="text-end"><strong>Reliability <a data-bs-toggle="tooltip"
-                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
-            <span class="badge bg-primary" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span>
-            &nbsp;<strong>Relevance <a data-bs-toggle="tooltip"
-                data-bs-title="The reliability scoring system leverages the AI-powered GPT models.">&#x24D8;</a></strong>
-            <span class="badge bg-success" data-bs-toggle="modal" data-bs-target="#scoringModal">9</span>
-          </p>
-
+          
           <hr />
           <h4>Circular Economy Integration in Steel Production</h4>
           <p>Adopting a closed-loop system for continuous material cycling, emphasizing recycling and designing easily
@@ -275,34 +261,43 @@
 
       </div>
       <div class="col-md-4 border-start p-4" id="pricing">
-        <h4 class="text-secondary">Pricing Details</h4>
+        <h4 class="text-secondary">Pricing Forecasts</h4>
         <img src="img/pricing-header.jpg" class="img-fluid rounded" alt="Pricing">
         <div class="mt-4">
           <canvas id="detailsChart1"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart2"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart3"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart4"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart5"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart6"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart7"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart8"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
         <div class="mt-4">
           <canvas id="detailsChart9"></canvas>
+          <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
 
 
@@ -443,7 +438,7 @@
     </div>
   </div>
 
-    <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
+  <div class="modal fade" id="feedbackModal" tabindex="-1" aria-labelledby="feedbackModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -457,12 +452,13 @@
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"  placeholder="Describe content quality"></textarea>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              placeholder="Describe content quality"></textarea>
           </div>
         </div>
         <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit Feedback</button>
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit Feedback</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -478,71 +474,81 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
   <script>
+
+  const backgroundColors = [
+      'rgba(87, 160, 229, 0.8)',
+      'rgba(87, 160, 229, 0.8)',
+      'rgba(87, 160, 229, 0.8)',
+      'rgba(87, 160, 229, 0.8)',
+      'rgba(255, 0, 0, 0.5)',
+      'rgba(255, 0, 0, 0.5)'
+  ];
+
     const ctx = document.getElementById('mainChart');
 
     new Chart(ctx, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23', 'Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Nov-23', 'Dec-23'],
+        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23', 'Jul-23', 'Aug-23', 'Sept-23', 'Oct-23'],
         datasets: [{
           label: 'Hot Rolled Coil 304',
-          data: [211.9, 206.7, 206.9, 201.2, 211.1, 220.7, 227.1, 214.1, 203.9, 198.9, 190.3, 189.3, 188.2, 190.3, 190.5, 191.1, 192.3],
+          data: [211.9, 206.7, 206.9, 201.2, 211.1, 220.7, 227.1, 214.1, 203.9, 198.9, 190.3, 189.3, 188.2, 190.3, 190.5],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Hot Rolled Coil 316',
-          data: [204.6, 197.6, 199.7, 198.9, 210.1, 228.7, 246.2, 238.0, 222.8, 209.1, 200.3, 199.3, 198.2, 200.3, 200.5, 201.1, 202.3],
+          data: [204.6, 197.6, 199.7, 198.9, 210.1, 228.7, 246.2, 238.0, 222.8, 209.1, 200.3, 199.3, 198.2, 200.3, 200.5],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Hot Rolled Plate 304',
-          data: [186.8, 190.2, 188.0, 179.0, 188.0, 195.5, 197.3, 187.3, 179.5, 176.1, 168.3],
+          data: [186.8, 190.2, 188.0, 179.0, 188.0, 195.5, 197.3, 187.3, 179.5, 176.1, 168.3, 172.1, 178.3, 180.1, 182.3],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Hot Rolled Plate 316',
-          data: [198.2, 199.5, 198.7, 191.0, 201.1, 217.1, 231.3, 221.8, 208.1, 196.2, 188.4],
+          data: [198.2, 199.5, 198.7, 191.0, 201.1, 217.1, 231.3, 221.8, 208.1, 196.2, 188.4, 190.2, 192.4, 193.2, 195.4],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Cold Rolled Coil 304',
-          data: [197.8, 191.9, 192.0, 186.8, 195.5, 203.9, 209.0, 200.1, 189.9, 185.1, 176.9],
+          data: [197.8, 191.9, 192.0, 186.8, 195.5, 203.9, 209.0, 200.1, 189.9, 185.1, 176.9, 180.2, 191.3, 193.2, 194.3],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Cold Rolled Coil 316',
-          data: [201.5, 193.7, 195.6, 195.2, 205.6, 223.2, 239.3, 233.1, 218.0, 204.9, 196.1],
+          data: [201.5, 193.7, 195.6, 195.2, 205.6, 223.2, 239.3, 233.1, 218.0, 204.9, 196.1, 198.8, 206.1, 207.4, 208.1],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Cold Rolled Coil 430',
-          data: [157.2, 154.0, 153.7, 143.0, 143.7, 146.6, 150.5, 147.0, 145.5, 144.3, 138.4],
+          data: [157.2, 154.0, 153.7, 143.0, 143.7, 146.6, 150.5, 147.0, 145.5, 144.3, 138.4, 148.3, 148.6, 149.3, 150.4],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Bright Drawn Bar 304',
-          data: [209.6, 200.8, 200.3, 189.6, 199.3, 206.6, 214.3, 205.2, 195.0, 193.6, 189.7],
+          data: [209.6, 200.8, 200.3, 189.6, 199.3, 206.6, 214.3, 205.2, 195.0, 193.6, 189.7, 190.3, 191.6, 193.1, 194.6],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
           pointHoverRadius: 8
         }, {
           label: 'Bright Drawn Bar 316',
-          data: [216.8, 208.4, 208.9, 204.2, 215.0, 226.1, 240.2, 238.4, 225.1, 213.4, 209.0],
+          data: [216.8, 208.4, 208.9, 204.2, 215.0, 226.1, 240.2, 238.4, 225.1, 213.4, 209.0, 203.4, 206.0, 207.2, 208.1],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
@@ -564,14 +570,15 @@
     new Chart(ctx1, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Hot Rolled Coil 304',
-          data: [211.9, 206.7, 206.9, 201.2, 211.1, 220.7, 227.1, 214.1, 203.9, 198.9, 190.3, 189.3, 188.2, 190.3, 190.5, 191.1, 192.3],
+          data: [ 189.3, 188.2, 190.3, 190.5, 191.3, 192.5],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -589,14 +596,15 @@
     new Chart(ctx2, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Hot Rolled Coil 316',
-          data: [204.6, 197.6, 199.7, 198.9, 210.1, 228.7, 246.2, 238.0, 222.8, 209.1, 200.3],
+          data: [238.0, 222.8, 209.1, 200.3, 202.1, 203.3],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -614,14 +622,15 @@
     new Chart(ctx3, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Hot Rolled Plate 304',
-          data: [186.8, 190.2, 188.0, 179.0, 188.0, 195.5, 197.3, 187.3, 179.5, 176.1, 168.3],
+          data: [187.3, 179.5, 176.1, 168.3, 170.1, 172.4],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -639,14 +648,15 @@
     new Chart(ctx4, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Hot Rolled Plate 316',
-          data: [198.2, 199.5, 198.7, 191.0, 201.1, 217.1, 231.3, 221.8, 208.1, 196.2, 188.4],
+          data: [221.8, 208.1, 196.2, 188.4, 190.1, 191.2],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -664,14 +674,15 @@
     new Chart(ctx5, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Cold Rolled Coil 304',
-          data: [197.8, 191.9, 192.0, 186.8, 195.5, 203.9, 209.0, 200.1, 189.9, 185.1, 176.9],
+          data: [200.1, 189.9, 185.1, 176.9, 178.4, 180.6],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -689,14 +700,15 @@
     new Chart(ctx6, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Cold Rolled Coil 316',
-          data: [201.5, 193.7, 195.6, 195.2, 205.6, 223.2, 239.3, 233.1, 218.0, 204.9, 196.1],
+          data: [233.1, 218.0, 204.9, 196.1, 198.4, 199.1],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -714,14 +726,15 @@
     new Chart(ctx7, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Cold Rolled Coil 430',
-          data: [157.2, 154.0, 153.7, 143.0, 143.7, 146.6, 150.5, 147.0, 145.5, 144.3, 138.4],
+          data: [147.0, 145.5, 144.3, 138.4, 140.3, 136.4],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         },
         ]
       },
@@ -739,14 +752,15 @@
     new Chart(ctx8, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Bright Drawn Bar 304',
-          data: [209.6, 200.8, 200.3, 189.6, 199.3, 206.6, 214.3, 205.2, 195.0, 193.6, 189.7],
+          data: [205.2, 195.0, 193.6, 189.7, 190.6, 188.7],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },
@@ -764,14 +778,15 @@
     new Chart(ctx9, {
       type: 'line',
       data: {
-        labels: ['Aug-22', 'Sep-22', 'Oct-22', 'Nov-22', 'Dec-22', 'Jan-23', 'Feb-23', 'Mar-23', 'Apr-23', 'May-23', 'Jun-23'],
+        labels: ['Jul-23', 'Aug-23', 'Sept-23', 'Oct-23', 'Forecast Nov-23', 'Forecast Dec-23'],
         datasets: [{
           label: 'Bright Drawn Bar 316',
-          data: [216.8, 208.4, 208.9, 204.2, 215.0, 226.1, 240.2, 238.4, 225.1, 213.4, 209.0],
+          data: [238.4, 225.1, 213.4, 209.0, 210.4, 208.0],
           borderWidth: 1,
           pointStyle: 'circle',
           pointRadius: 6,
-          pointHoverRadius: 8
+          pointHoverRadius: 8,
+          backgroundColor: backgroundColors
         }
         ]
       },

@@ -42,6 +42,12 @@
   <main class="container">
     <div class="row mt-5">
       <div class="col-12">
+        <div class="alert alert-primary text-center">This is a demo of the Stainless Hill platform as a solution to our
+          hackathon challenge. While the data presented
+          here is real as provided by our Custom GPTs, we are in no way officially affiliated with <a
+            href="https://www.outokumpu.com" target="_blank">Outokumpu</a>, one of the kind sponsors and challenge
+          mentors at the <a href="https://www.junction2023.com" target="_blank">Junction 2023</a> hackathon in Helsinki.
+        </div>
         <div class="bg-primary rounded p-2 text-center">
           <h2 class="text-light"><img src="img/spiral.png" style="height: 3rem; padding-right: 1rem">Data on Steel and
             Sustainability</h2>
@@ -52,7 +58,9 @@
     <div class="row mt-4" id="dashboard">
       <div class="col-12 border p-4 rounded bg-light">
         <h3 class="text-secondary">Latest Developments</h3>
-        <p class="text-secondary">Generated using <img src="img/chatgpt-logo.png" height="16px" alt="OpenAI ChatGPT"> <strong>OpenAI Custom ChatGPTs</strong></p>
+        <p class="text-secondary">Provided by our <img src="img/chatgpt-logo.png" height="16px" alt="OpenAI ChatGPT">
+          <strong>OpenAI Custom ChatGPTs</strong>
+        </p>
 
         <div>
           <canvas id="mainChart"></canvas>
@@ -195,7 +203,7 @@
     </div>
 
     <div class="row mt-5 border-top">
-      <div class="col-md-4 border-start p-4" id="news">
+      <div class="col-md-4 border-start border-bottom p-4" id="news">
         <h4 class="text-secondary">News Timeline</h4>
         <img src="img/news-header.jpg" class="img-fluid rounded" alt="News">
         <div class="alert alert-primary border mt-3 p-3">
@@ -275,7 +283,7 @@
         </div>
 
       </div>
-      <div class="col-md-4 border-start p-4" id="pricing">
+      <div class="col-md-4 border-start border-bottom p-4" id="pricing">
         <h4 class="text-secondary">Pricing Forecasts</h4>
         <img src="img/pricing-header.jpg" class="img-fluid rounded" alt="Pricing">
         <div class="mt-4">
@@ -314,10 +322,9 @@
           <canvas id="detailsChart9"></canvas>
           <sup>Forecasts in <span class="badge bg-danger">red</span> are only based on trends.</sup>
         </div>
-
-
       </div>
-      <div class="col-md-4 border-start border-end p-4" id="patents">
+
+      <div class="col-md-4 border-start border-end border-bottom p-4" id="patents">
         <h4 class="text-secondary">Recent Patents</h4>
         <img src="img/patent-header.jpg" class="img-fluid rounded" alt="Patents">
         <div class="alert alert-secondary mt-3 p-3">
@@ -389,6 +396,18 @@
       </div>
     </div>
   </main>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Video Explanation</h2>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/rF5WAkh4rmw?si=StD0KmN522G369o1"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
 
   <div class="modal fade" id="scoringModal" tabindex="-1" aria-labelledby="scoringModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
